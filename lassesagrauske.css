@@ -1,7 +1,5 @@
 h1 {
-    color: azure;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    font-family: 'Courier New', monospace;
     font-size: 100px;
     text-align: center;
 }
@@ -14,6 +12,9 @@ td {
 }
 body {
     background-color: #121212;
+    font-family: 'Courier New', monospace;
+    color: azure;
+    padding-bottom: 5%;
 }
 table {
     width: 100%;
@@ -27,5 +28,33 @@ table {
     text-align: right;
 }
 p {
+    font-size: 25px;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+h2 {
+    font-size: 40px;
+    padding-left: 18%;
+    padding-top: 100px;
+}
+button {
+    /* border-color: azure; */
+    border: 1px solid azure;
+    color: azure;
+    background: none;
     font-family: 'Courier New', monospace;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    transition-duration: 0.5s;
+    margin-left: 18%;
+}
+button:hover {
+    background-color: azure;
+    color: #121212;
+}
+.footer {
+    text-align: center;
+    padding-top: 10%;
 }
