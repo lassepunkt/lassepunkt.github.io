@@ -60,3 +60,6 @@ button:hover {
     text-align: center;
     padding-top: 10%;
 }
+a:link {
+    color: azure;
+}
