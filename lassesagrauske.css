@@ -1,43 +1,30 @@
 h1 {
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-size: 100px;
     text-align: center;
-    padding-left: 18%;
-    padding-right: 18%;
-}
-td {
-    color: azure;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 60px;
-    padding: 20px;
-    width: 50%;
+    margin-left: 18%;
+    margin-right: 18%;
+    /* border: 1px  solid blue; */
 }
 body {
     background-color: #121212;
     font-family: 'Courier New', monospace;
     color: azure;
-    padding-bottom: 5%;
-}
-table {
-    width: 100%;
-    margin: 100;
-    /* border: 1px solid azure; */
-}
-.einheit {
-    text-align: left;
-}
-.zahl {
-    text-align: right;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    /* border: 1px  solid blue; */
 }
 p {
     font-size: 25px;
-    padding-left: 18%;
-    padding-right: 18%;
+    margin-left: 18%;
+    margin-right: 18%;
+    /* border: 1px  solid blue; */
 }
 h2 {
     font-size: 40px;
-    padding-left: 18%;
-    padding-top: 100px;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 150px;
+    /* border: 1px  solid blue; */
 }
 button {
     /* border-color: azure; */
@@ -50,7 +37,8 @@ button {
     padding: 10px;
     font-size: 18px;
     transition-duration: 0.5s;
-    margin-left: 18%;
+    margin-right: 18%;
+    float: right;
 }
 button:hover {
     background-color: azure;
@@ -58,7 +46,7 @@ button:hover {
 }
 .footer {
     text-align: center;
-    padding-top: 10%;
+    margin-top: 10%;
 }
 a:link {
     color: azure;
