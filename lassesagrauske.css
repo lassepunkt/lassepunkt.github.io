@@ -1,8 +1,6 @@
 h1 {
     font-size: 100px;
     text-align: center;
-    margin-left: 18%;
-    margin-right: 18%;
     /* border: 1px  solid blue; */
 }
 body {
@@ -11,6 +9,8 @@ body {
     color: #E2E2E2;
     margin-bottom: 2%;
     margin-top: 2%;
+    margin-left: 18%;
+    margin-right: 18%;
     /* border: 1px  solid blue; */
 }
 header {
@@ -18,14 +18,10 @@ header {
 }
 p {
     font-size: 25px;
-    margin-left: 18%;
-    margin-right: 18%;
     /* border: 1px  solid blue; */
 }
 h2 {
     font-size: 40px;
-    margin-left: 18%;
-    margin-right: 18%;
     margin-top: 150px;
     /* border: 1px  solid blue; */
 }
@@ -40,7 +36,7 @@ button {
     padding: 10px;
     font-size: 18px;
     /* transition-duration: 0.5s; */
-    margin-right: 18%;
+    /* margin-right: 18%; */
     float: right;
 }
 /* button:hover {
@@ -69,8 +65,8 @@ div {
         color: #E2E2E2;
         margin-bottom: 2%;
         margin-top: 2%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 5%;
+        margin-right: 5%;
         /* border: 1px  solid blue; */
     }
     header {
@@ -91,7 +87,7 @@ div {
         color: #E2E2E2;
         background: none;
         font-family: 'Courier New', monospace;
-        display: inline-block;
+        /* display: inline-block; */
         text-align: center;
         padding: 10px;
         font-size: 18px;
