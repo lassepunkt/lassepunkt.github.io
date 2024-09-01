@@ -45,7 +45,7 @@ button {
 } */
 .footer {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 150px;
 }
 a:link {
     color: #E2E2E2;
@@ -58,13 +58,14 @@ div {
         font-size: 40px;
         text-align: center;
         /* border: 1px  solid blue; */
+        margin-bottom: -50px;
     }
     body {
         background-color: #121212;
         font-family: 'Courier New', monospace;
         color: #E2E2E2;
-        margin-bottom: 2%;
-        margin-top: 2%;
+        margin-bottom: 5%;
+        margin-top: 5%;
         margin-left: 5%;
         margin-right: 5%;
         /* border: 1px  solid blue; */
@@ -78,7 +79,7 @@ div {
     }
     h2 {
         font-size: 25px;
-        margin-top: 100px;
+        margin-top: 150px;
         /* border: 1px  solid blue; */
     }
     button {
