@@ -57,3 +57,60 @@ a:link {
 div {
     background-color: bisque;
 }
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        /* border: 1px  solid blue; */
+    }
+    body {
+        background-color: #121212;
+        font-family: 'Courier New', monospace;
+        color: #E2E2E2;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        margin-left: 0;
+        margin-right: 0;
+        /* border: 1px  solid blue; */
+    }
+    header {
+        padding-bottom: 10%;
+    }
+    p {
+        font-size: 18px;
+        /* border: 1px  solid blue; */
+    }
+    h2 {
+        font-size: 25px;
+        margin-top: 100px;
+        /* border: 1px  solid blue; */
+    }
+    button {
+        /* border-color: #E2E2E2; */
+        border: 1px solid #E2E2E2;
+        color: #E2E2E2;
+        background: none;
+        font-family: 'Courier New', monospace;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        /* transition-duration: 0.5s; */
+        float: right;
+    }
+    /* button:hover {
+        background-color: #E2E2E2;
+        color: #121212;
+    } */
+    .footer {
+        text-align: center;
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    a:link {
+        color: #E2E2E2;
+    }
+    div {
+        background-color: bisque;
+    }
+}
