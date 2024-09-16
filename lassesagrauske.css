@@ -53,7 +53,7 @@ a:link {
 div {
     background-color: bisque;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     h1 {
         font-size: 40px;
         text-align: center;
