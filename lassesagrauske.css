@@ -1,6 +1,7 @@
 h1 {
     font-size: 100px;
     text-align: center;
+    margin-top: 100px;
     /* border: 1px  solid blue; */
 }
 body {
@@ -35,6 +36,7 @@ button {
     text-align: center;
     padding: 10px;
     font-size: 18px;
+    margin-bottom: 20px;
     /* transition-duration: 0.5s; */
     /* margin-right: 18%; */
     float: right;
@@ -50,15 +52,16 @@ button {
 a:link {
     color: #E2E2E2;
 }
-div {
+/* div {
     background-color: bisque;
-}
+} */
 @media screen and (max-width: 1000px) {
     h1 {
         font-size: 40px;
         text-align: center;
         /* border: 1px  solid blue; */
         margin-bottom: -50px;
+        margin-top: 150px;
     }
     body {
         background-color: #121212;
@@ -93,7 +96,7 @@ div {
         padding: 10px;
         font-size: 18px;
         /* transition-duration: 0.5s; */
-        float: right;
+        /* float: right; */
     }
     /* button:hover {
         background-color: #E2E2E2;
@@ -107,7 +110,7 @@ div {
     a:link {
         color: #E2E2E2;
     }
-    div {
+    /* div {
         background-color: bisque;
-    }
+    } */
 }

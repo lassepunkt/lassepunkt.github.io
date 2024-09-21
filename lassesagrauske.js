@@ -1,3 +1,4 @@
+changeMode()
 function changeMode() {
     const mode = document.getElementById('mode')
 
