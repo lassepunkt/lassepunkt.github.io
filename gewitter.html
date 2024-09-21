@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gewitter App</title>
+        <link rel="stylesheet" href="gewitter.css">
+        <script src="gewitter.js"></script>
+    </head>
+    <body>
+        <header>
+            v 0.4
+            <h1>Gewitter-Stoppuhr</h1>
+        </header>
+        <div style="margin-left: 20%; margin-right: 20%;">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()" style="float: right;">Stop</button>
+        </div>
+        <div style="padding-bottom: 70px; padding-top: 70px;">
+            <h2 id="dist">0.000 km</h2>
+            <h2 id="time">00:00.0</h2>
+        </div>
+        <div style="padding-top: 10px; padding-bottom: 10px;">
+            <label for="temp">Wie hoch ist die Temperatur?</label>
+            <select name="temp" id="temp">
+                <option value="-50">-50 °C</option>
+                <option value="-40">-40 °C</option>
+                <option value="-30">-30 °C</option>
+                <option value="-20">-20 °C</option>
+                <option value="-10">-10 °C</option>
+                <option value="0">0 °C</option>
+                <option value="10">10 °C</option>
+                <option value="20" selected>20 °C</option>
+                <option value="30">30 °C</option>
+                <option value="40">40 °C</option>
+                <option value="50">50 °C</option>
+            </select>
+            <p id="tem"></p>
+        </div>
+        <h3>Info</h3>
+        <p>Eine Stoppuhr kann verwendet werden, um die Entfernung eines Gewitters zu bestimmen, indem die Schallgeschwindigkeit ausgenutzt wird. Diese Methode basiert auf dem Zeitunterschied zwischen dem Blitz und dem Donner. Aber wie genau funktioniert das?</p>
+        <h4>Die Schallgeschwindigkeit</h4>
+        <p>Schall breitet sich durch die Luft mit einer Geschwindigkeit von etwa 343 Metern pro Sekunde aus, vorausgesetzt, die Temperatur beträgt 20 °C. Diese Geschwindigkeit kann allerdings je nach Luftdruck, Feuchtigkeit und Temperatur leicht variieren. Blitz und Donner entstehen gleichzeitig, doch weil Licht viel schneller als Schall ist (ca. 300.000 Kilometer pro Sekunde), erreicht uns der Blitz fast sofort, während der Schall des Donners merklich später eintrifft.</p>
+        <h4>Anwendung der Stoppuhr</h4>
+        <p>Sobald man einen Blitz sieht, startet man die Stoppuhr. Anschließend wartet man darauf, den Donner zu hören, und stoppt die Zeit, sobald das Geräusch eintrifft. Diese Zeitdifferenz zwischen Blitz und Donner gibt an, wie lange der Schall benötigt hat, um von der Gewitterwolke zum Beobachter zu gelangen.</p>
+        <h4>Berechnung der Entfernung</h4>
+        <p>Um die Entfernung zum Gewitter zu berechnen, multipliziert man die gemessene Zeit in Sekunden mit der Schallgeschwindigkeit. Ein einfaches Beispiel: Wenn man 3 Sekunden zwischen Blitz und Donner misst, hat sich der Schall in dieser Zeit etwa 3 Sekunden * 343 Meter/Sekunde = 1.029 Meter ausgebreitet. Das Gewitter befindet sich also etwa einen Kilometer entfernt. Oft wird eine einfache Faustregel verwendet: Pro Sekunde Zeitdifferenz entspricht dies ca. 333 Metern (bzw. etwa 1 Kilometer nach 3 Sekunden).</p>
+        <h4>Grenzen der Methode</h4>
+        <p>Diese Methode ist nützlich, um die ungefähre Entfernung eines Gewitters zu bestimmen, doch gibt es auch einige Einschränkungen. Die Geschwindigkeit des Schalls hängt, wie erwähnt, von Temperatur und Luftfeuchtigkeit ab, sodass die genaue Entfernung leicht variieren kann. Zudem ist es schwierig, wenn das Gewitter direkt über dem Beobachter ist, da die Zeitspanne zwischen Blitz und Donner dann sehr kurz ist.</p>
+        <h4>Fazit</h4>
+        <p>Die Verwendung einer Stoppuhr zur Bestimmung der Entfernung eines Gewitters ist eine praktische und anschauliche Methode, die auf der konstanten Schallgeschwindigkeit in der Luft basiert. Sie vermittelt ein gutes Gefühl für die Distanz des Gewitters und hilft, mögliche Gefahren besser einzuschätzen.</p>
+    </body>
+</html>

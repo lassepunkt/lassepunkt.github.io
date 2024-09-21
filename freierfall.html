@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Freier Fall Stoppuhr</title>
+        <link rel="stylesheet" href="gewitter.css">
+        <script src="freierfall.js"></script>
+    </head>
+    <body>
+        <header>
+            v 0.2
+            <h1>Freier Fall Stoppuhr</h1>
+        </header>
+        <div style="margin-left: 20%; margin-right: 20%;">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()" style="float: right;">Stop</button>
+        </div>
+        <div style="padding-bottom: 70px; padding-top: 70px;">
+            <h2 id="dist">0000 m</h2>
+            <h2 id="speed">000 m/s</h2>
+            <h2 id="time">00:00.0</h2>
+        </div>
+        <div style="padding-top: 10px; padding-bottom: 10px;">
+            <label for="gravity">Fallbeschleunigung in m/s<sup>2</sup>:</label>
+            <input type="number" id="gravity" min="0" step="0.01" value="9.81">
+        </div>
+        <div style="padding-top: 10px; padding-bottom: 10px;"></div>
+            <label for="v">Endgeschwindigkeit in  m/s:</label>
+            <input type="number" id="v" min="0" value="55">
+            <p style="font-size: 18px;">(0 m/s um den Luftwiderstand zu vernachlässigen)</p>
+        </div>
+        <h3>Info</h3>
+        <p>Eine Stoppuhr kann verwendet werden, um die Fallstrecke und die Geschwindigkeit eines Objekts zu berechnen, das sich im freien Fall befindet. Diese Berechnungen basieren auf der Erdbeschleunigung (Gravitationskonstante) und den physikalischen Gesetzen des freien Falls. Doch wie funktioniert das genau?</p>
+        <h4>Die Erdbeschleunigung</h4>
+        <p>Die Erdbeschleunigung, auch als <b>g</b> bezeichnet, beträgt auf der Erdoberfläche etwa <b>9,81 m/s<sup>2</sup></b>. Das bedeutet, dass die Geschwindigkeit eines fallenden Objekts in jeder Sekunde um etwa 9,81 Meter pro Sekunde zunimmt, solange keine Luftwiderstände berücksichtigt werden. Dies bildet die Grundlage für die Berechnungen von Geschwindigkeit und Fallstrecke.</p>
+        <h4>Berechnung der Fallstrecke</h4>
+        <p>Um die Fallstrecke zu berechnen, wird die Zeit gemessen, die ein Objekt im freien Fall verbringt. Diese Zeitspanne wird als <b>t</b> (in Sekunden) bezeichnet. Die Formel für die Fallstrecke <b>s</b> bei einem gleichmäßig beschleunigten Fall (unter Vernachlässigung des Luftwiderstands) lautet:</p>
+        <p>s = 1/2 * g * t<sup>2</sup></p>
+        <h4>Berechnung der Endgeschwindigkeit</h4>
+        <p>Die Geschwindigkeit, die ein Objekt am Ende des freien Falls erreicht, kann ebenfalls mit der Stoppuhr berechnet werden. Die Endgeschwindigkeit <b>v</b> nach einer bestimmten Zeit <b>t</b> ist durch die folgende Formel gegeben:</p>
+        <p>v = g * t</p>
+        <h4>Zusammenhang zwischen Fallstrecke und Geschwindigkeit</h4>
+        <p>Es gibt einen direkten Zusammenhang zwischen der Fallstrecke und der Endgeschwindigkeit. Da die Geschwindigkeit mit der Zeit linear zunimmt und die Fallstrecke quadratisch, steigt die zurückgelegte Strecke bei längeren Fallzeiten zunehmend schneller an. Dies erklärt, warum Objekte, die lange fallen, nicht nur eine hohe Geschwindigkeit erreichen, sondern auch eine enorme Strecke zurücklegen.</p>
+        <h4>Luftwiderstand und Endgeschwindigkeit</h4>
+        <p>In der Realität wird die Geschwindigkeit eines fallenden Objekts durch den Luftwiderstand begrenzt. Wenn der Luftwiderstand groß genug ist, erreicht das Objekt eine sogenannte <b>Endgeschwindigkeit</b> (Terminalgeschwindigkeit), bei der die Beschleunigung aufhört und das Objekt mit konstanter Geschwindigkeit fällt. Diese Endgeschwindigkeit hängt von Faktoren wie der Form und Masse des Objekts sowie der Dichte der Luft ab.</p>
+        <h4>Fazit</h4>
+        <p>Die Berechnung der Fallstrecke und Endgeschwindigkeit eines Objekts mithilfe einer Stoppuhr und der Erdbeschleunigung ermöglicht es, das Verhalten eines Objekts im freien Fall präzise zu bestimmen. Diese einfachen physikalischen Prinzipien helfen, sowohl die Geschwindigkeit als auch die zurückgelegte Strecke zu berechnen, solange der Luftwiderstand vernachlässigt wird.</p>
+    </body>
+</html>
