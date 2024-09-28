@@ -12,6 +12,8 @@ function changeMode() {
     const textColorDark = '#E2E2E2'
     const backgroundColorLight = '#FFFFFF'
     const backgroundColorDark = '#121212'
+    const shadowColorLight = 'gray'
+    const shadowColorDark = 'lightgray'
 
     if (mode.innerHTML == 'Light') {
         mode.innerHTML = 'Dark'
@@ -31,6 +33,7 @@ function changeMode() {
         for (i = 0; i < button.length; i++) {
             button[i].style.color = textColorLight
             button[i].style.border = '1px solid ' + textColorLight
+            // button[i].style.boxShadow = '3px 3px ' + shadowColorLight
             // button[i].onmouseover.style.color = backgroundColorLight
         }
         for (i = 0; i < a.length; i++) {
@@ -53,6 +56,7 @@ function changeMode() {
         for (i = 0; i < button.length; i++) {
             button[i].style.color = textColorDark
             button[i].style.border = '1px solid ' + textColorDark
+            // button[i].style.boxShadow = '3px 3px ' + shadowColorDark
         }
         for (i = 0; i < a.length; i++) {
             a[i].style.color = textColorDark

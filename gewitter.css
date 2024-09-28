@@ -28,7 +28,7 @@ p {
 }
 button {
     border: 1px solid black;
-    background: none;
+    background: white;
     font-family: 'Courier New', monospace;
     display: inline-block;
     text-align: center;
@@ -36,6 +36,7 @@ button {
     font-size: 50px;
     color: black;
     transition-duration: 0.5s;
+    /* box-shadow: 3px 3px gray; */
 }
 button:hover {
     background: black;
