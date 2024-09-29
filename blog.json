@@ -1,0 +1,32 @@
+{
+    "blog":[
+        {
+            "titel":"Hallo zusammen…",
+            "autor":"Lasse",
+            "datum":"31.03.2023",
+            "text":"Lange nichts gesehen, lange nichts gehört. Für Lina und mich geht es morgen endlich los. Unsere drei Monate Entspannung warten. Wir haben uns dazu entschieden, euch dabei ein bisschen mitzunehmen. In diesem Blog schreiben wir ab heute also voraussichtlich jeden Tag, was wir so erleben und natürlich wird es auch wieder welche von meinen Fotos zu sehen geben. Drei Monate sind eine sehr lange Zeit und ich bin sehr gespannt und neugierig, was passieren wird und wie ich das ganze rückblickend betrachte. Ich hoffe, es wird eine gute Erfahrung."
+        },
+        {
+            "titel":"Tag 1 - Neustadt – Brüssel",
+            "autor":"Lina",
+            "datum":"02.04.2023",
+            "bilder":[
+                "blog_bilder/f258dc_1154b2787886494daf987d4e391c2796~mv2.jpg.webp",
+                "blog_bilder/f258dc_aca5c5dbb43345c98b1d496f22222d35~mv2.jpg.webp"
+            ],
+            "text":"Um 7 Uhr hat der Wecker geklingelt, dann wurden noch die letzten Sachen erledigt, Proviant eingepackt und es ging endlich los!\nAls wir in Neustadt in der S-Bahn saßen, hörte bei mir die Nervosität einfach auf. Es hat sich sehr surreal angefühlt, die Gegend aus dem Fenster zu sehen und zu wissen, dass ich die so schnell nicht wieder sehen werde. Aber irgendwie auch beruhigend, es geht endlich los, die letzten Tage haben meine Gedanken nicht aufgehört zu kreisen rund um die Liste mit den Dingen, die noch gemacht und gepackt und besorgt werden mussten. Jetzt ist alles verpackt und vorbereitet und es kann losgehen.\nErstaunlich gut trotz hoher Auslastung und deutscher Bahn lief die Zugfahrt und dann haben wir auch den Weg in die Unterkunft geschafft. Kurze Pause und ab zum Atomium und belgische Pommes essen.\nEs geht wirklich los."
+        },
+        {
+            "titel":"Tag 2 - Brüssel",
+            "autor":"Lasse",
+            "datum":"03.04.2023",
+            "text":"Aufgewacht bin ich von dem Wecker der beiden Spanierinnen im Zimmer neben uns. Wir hatten eigentlich ziemlich viel Zeit, weil die Stadtführung erst um 14 Uhr war, aber letztendlich sind wir schon gegen 11 in die Innenstadt gefahren. Kurz ne Waffel geteilt und wenn man schon mal in Brüssel ist, dann muss man (wenn man ich ist), auf jeden Fall zu einem der politischen Zentren der europäischen Union: das Europäische Parlament."
+        },
+        {
+            "titel":"Tag 3 - Brüssel – Boulogne-sur-Mer",
+            "autor":"Lina",
+            "datum":"04.04.2023",
+            "text":"Heute durften wir die belgische Landschaft aus dem Fenster beobachten, bei schönstem Wetter.\nWir sind nach Frankreich gefahren und nach circa 6 Stunden in Boulogne angekommen. Die Zugfahrt war tatsächlich ziemlich unspektakulär. Ansonsten ist unsere Gastgeberin super lieb und die Stadt ist erstaunlich schön. Ich freue mich, morgen zum Strand zu spazieren :)"
+        }
+    ]
+}
