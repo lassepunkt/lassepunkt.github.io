@@ -42339,8 +42339,7 @@ function display(i) {
   text += `</tr>
             <tr>
               <th>Rollen:</th>
-              <th>Sprecher/in:</th>
-              <th>Pseudonym:</th>
+              <th>Sprecher/in<br><i>(Pseudonym)</i>:</th>
             </tr>
             ${roles}
         </table>
@@ -42357,19 +42356,18 @@ function displayRoles(i) {
     } else {
       ret += `<td>${role.rolle}:</td>`
     }
-    if (role.sprecher.toUpperCase().includes(input.toUpperCase()) && input != '') {
-      ret += `<td class="marked">${role.sprecher}</td>`
-    } else {
-      ret += `<td>${role.sprecher}</td>`
-    }
     try {
-      if (role.pseudonym.toUpperCase().includes(input.toUpperCase()) && input != '') {
-        ret += `<td class="marked">${role.pseudonym}</td>`
+      if (role.sprecher.toUpperCase().includes(input.toUpperCase()) && input != '' || role.pseudonym.toUpperCase().includes(input.toUpperCase()) && input != '') {
+        ret += `<td class="marked">${role.sprecher}<br><i>(${role.pseudonym})</i></td>`
       } else {
-        ret += `<td>${role.pseudonym}</td>`
+        ret += `<td>${role.sprecher}<br><i>(${role.pseudonym})</i></td>`
       }
     } catch {
-      ret += `<td>–</td>`
+      if (role.sprecher.toUpperCase().includes(input.toUpperCase()) && input != '') {
+        ret += `<td class="marked">${role.sprecher}</td>`
+      } else {
+        ret += `<td>${role.sprecher}</td>`
+      }
     }
     ret += '</tr>'
   }

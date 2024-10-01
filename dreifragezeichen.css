@@ -89,7 +89,12 @@ label {
     }
     td {
         width: 50%;
+        /* font-size: 10px; */
     }
+    /* th {
+        width: 33%;
+        font-size: 10px;
+    } */
     input {
         width: 96%;
         padding: 2%;
