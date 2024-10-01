@@ -42357,7 +42357,7 @@ function displayRoles(i) {
       ret += `<td>${role.rolle}:</td>`
     }
     try {
-      if (role.sprecher.toUpperCase().includes(input.toUpperCase()) && input != '' || role.pseudonym.toUpperCase().includes(input.toUpperCase()) && input != '') {
+      if (role.pseudonym.toUpperCase().includes(input.toUpperCase()) && input != '' || role.sprecher.toUpperCase().includes(input.toUpperCase()) && input != '') {
         ret += `<td class="marked">${role.sprecher}<br><i>(${role.pseudonym})</i></td>`
       } else {
         ret += `<td>${role.sprecher}<br><i>(${role.pseudonym})</i></td>`
