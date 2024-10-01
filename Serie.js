@@ -42304,7 +42304,8 @@ function display(i) {
             </tr>
             <tr>
               <th><a href="${i.links.spotify}">Spotify</a></th>
-            </tr
+            </tr>
+            <p class="description">${i.beschreibung}<p>
             <tr>
                 <td>Autor/in:</td>`
   try {

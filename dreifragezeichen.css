@@ -52,6 +52,8 @@ input {
     font-size: 20px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* position: sticky;
+    top: 0; */
 }
 label {
     font-size: 20px;
@@ -60,6 +62,18 @@ label {
     float: right;
     padding: 0;
     font-size: 20px;
+}
+.top {
+    background-color: gray;
+    height: 20px;
+    width: 20px;
+    /* position: sticky; */
+    bottom: 0;
+}
+.description {
+    font-size: 18px;
+    /* padding: 8px; */
+    padding-right: 350px;
 }
 @media screen and (max-width: 1000px) {
     body {
@@ -86,5 +100,8 @@ label {
     }
     .link {
         font-size: 15px;
+    }
+    .description {
+        display: none;
     }
 }
