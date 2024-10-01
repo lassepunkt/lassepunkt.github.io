@@ -42287,7 +42287,7 @@ function display(i) {
   roles = displayRoles(i)
   options = {year: 'numeric', month: '2-digit', day: '2-digit'}
   if (new Date(i.veröffentlichungsdatum).getFullYear() == input) {
-    date = `<h3 class="marked">${datum.toLocaleDateString("de-DE", options)}</h3>`
+    date = `<h3 class="marked">(${datum.toLocaleDateString("de-DE", options)})</h3>`
   } else {
     date = `<h3>(${datum.toLocaleDateString("de-DE", options)})</h3>`
   }
