@@ -42274,6 +42274,13 @@ function match(i, input) {
       if (role.rolle.toUpperCase().includes(input.toUpperCase()) || role.sprecher.toUpperCase().includes(input.toUpperCase())) {
         return true
       }
+      try {
+        if (role.pseudonym.toUpperCase().includes(input.toUpperCase())) {
+          return true
+        }
+      } catch {
+        
+      }
     }
   } catch {}
   if (new Date(i.veröffentlichungsdatum).getFullYear() == input) {
