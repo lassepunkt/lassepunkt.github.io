@@ -42298,6 +42298,7 @@ function display(i) {
   }
   text += `<li>${title}${date}
         <img src="${i.links.cover}" alt="Cover">
+        <p class="description">${i.beschreibung}<p>
         <table>
             <tr>
               <th><a href="${i.links.appleMusic}">Apple Music</a></th>
@@ -42305,7 +42306,6 @@ function display(i) {
             <tr>
               <th><a href="${i.links.spotify}">Spotify</a></th>
             </tr>
-            <p class="description">${i.beschreibung}<p>
             <tr>
                 <td>Autor/in:</td>`
   try {
@@ -42333,6 +42333,7 @@ function display(i) {
             <tr>
               <th>Rollen:</th>
               <th>Sprecher/in:</th>
+              <th>Pseudonym:</th>
             </tr>
             ${roles}
         </table>
@@ -42353,6 +42354,15 @@ function displayRoles(i) {
       ret += `<td class="marked">${role.sprecher}</td>`
     } else {
       ret += `<td>${role.sprecher}</td>`
+    }
+    try {
+      if (role.pseudonym.toUpperCase().includes(input.toUpperCase()) && input != '') {
+        ret += `<td class="marked">${role.pseudonym}</td>`
+      } else {
+        ret += `<td>${role.pseudonym}</td>`
+      }
+    } catch {
+      ret += `<td>–</td>`
     }
     ret += '</tr>'
   }
