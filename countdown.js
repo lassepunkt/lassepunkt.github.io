@@ -13,7 +13,12 @@ setInterval(function() {
     // document.getElementById("jahre").innerHTML = jahre
     // document.getElementById("monate").innerHTML = monate
     // document.getElementById("wochen").innerHTML = wochen
-    if (tage != 0) {
+    if (sekunden < 0) {
+        document.getElementById("label").innerHTML = "Ab geht's!"
+    } else {
+        document.getElementById("label").innerHTML = "Ab geht's in…"
+    }
+    if (tage > 0) {
         if (tage == 1) {
             document.getElementById("labelTage").innerHTML = 'Tag,'
         } else {
@@ -25,7 +30,7 @@ setInterval(function() {
         document.getElementById("labelTage").innerHTML = ''
     }
     stunden = stunden - tage * 24
-    if (stunden != 0 || tage != 0) {
+    if (stunden > 0 || tage > 0) {
         if (stunden == 1) {
             document.getElementById("labelStunden").innerHTML = 'Stunde,'
         } else {
@@ -37,7 +42,7 @@ setInterval(function() {
         document.getElementById("labelStunden").innerHTML = ''
     }
     minuten = minuten - stunden * 60 - tage * 24 * 60
-    if (minuten != 0 || stunden != 0) {
+    if (minuten > 0 || stunden > 0 || tage > 0) {
         if (minuten == 1) {
             document.getElementById("labelMinuten").innerHTML = 'Minute und'
         } else {
@@ -49,7 +54,7 @@ setInterval(function() {
         document.getElementById("labelMinuten").innerHTML = ''
     }
     sekunden = sekunden % 60
-    if (sekunden != 0 || minuten != 0) {
+    if (sekunden > 0 || minuten > 0 || stunden > 0 || tage > 0) {
         if (sekunden == 1) {
             document.getElementById("labelSekunden").innerHTML = 'Sekunde.'
         } else {
