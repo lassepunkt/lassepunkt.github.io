@@ -39,9 +39,9 @@ setInterval(function() {
     minuten = minuten - stunden * 60 - tage * 24 * 60
     if (minuten != 0 || stunden != 0) {
         if (minuten == 1) {
-            document.getElementById("labelMinuten").innerHTML = 'Minute,'
+            document.getElementById("labelMinuten").innerHTML = 'Minute und'
         } else {
-            document.getElementById("labelMinuten").innerHTML = 'Minuten,'
+            document.getElementById("labelMinuten").innerHTML = 'Minuten und'
         }
         document.getElementById("minuten").innerHTML = minuten
     } else {
@@ -51,9 +51,9 @@ setInterval(function() {
     sekunden = sekunden % 60
     if (sekunden != 0 || minuten != 0) {
         if (sekunden == 1) {
-            document.getElementById("labelSekunden").innerHTML = 'Sekunde,'
+            document.getElementById("labelSekunden").innerHTML = 'Sekunde.'
         } else {
-            document.getElementById("labelSekunden").innerHTML = 'Sekunden,'
+            document.getElementById("labelSekunden").innerHTML = 'Sekunden.'
         }
         document.getElementById("sekunden").innerHTML = sekunden
     } else {
