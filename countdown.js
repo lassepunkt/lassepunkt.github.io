@@ -1,6 +1,6 @@
 setInterval(function() {
     let since = 1728752400000
-    since = 1728165600000
+    // since = 1728165600000
     // since = 1728152037000 + 30000
     let time = since - new Date().getTime()
     let jahre = Math.floor(time / (1000 * 60 * 60 * 24 * 365))
@@ -16,7 +16,7 @@ setInterval(function() {
     // document.getElementById("jahre").innerHTML = jahre
     // document.getElementById("monate").innerHTML = monate
     // document.getElementById("wochen").innerHTML = wochen
-    if (sekunden < 0) {
+    if (sekunden <= 0) {
         document.getElementById("label").innerHTML = "Ab geht's!"
         document.getElementById("textHandy").innerHTML = textH
         document.getElementById("textComp").innerHTML = textC
