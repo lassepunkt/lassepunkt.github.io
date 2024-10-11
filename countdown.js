@@ -1,3 +1,87 @@
+function intToStr(zahl) {
+    ret = ''
+    einer = zahl % 10
+    zehner = Math.floor(zahl / 10)
+    switch (zahl) {
+        case 0: return 'null'
+        case 1: return 'einer'
+        case 11: return 'elf'
+        case 12: return 'zwölf'
+        case 16: return 'sechzehn'
+        case 17: return 'siebzehn'
+    }
+    switch (einer) {
+        case 1:
+            ret += 'ein'
+            break
+        case 2:
+            ret += 'zwei'
+            break
+        case 3:
+            ret += 'drei'
+            break
+        case 4:
+            ret += 'vier'
+            break
+        case 5:
+            ret += 'fünf'
+            break
+        case 6:
+            ret += 'sechs'
+            break
+        case 7:
+            ret += 'sieben'
+            break
+        case 8:
+            ret += 'acht'
+            break
+        case 9:
+            ret += 'neun'
+            break
+        default:
+            ret += ''
+    }
+    if (zahl > 20 && zahl % 10 != 0) {
+        ret += 'und'
+    }
+    switch (zehner) {
+        case 1:
+            ret += 'zehn'
+            break
+        case 2:
+            ret += 'zwanzig'
+            break
+        case 3:
+            ret += 'dreißig'
+            break
+        case 4:
+            ret += 'vierzig'
+            break
+        case 5:
+            ret += 'fünfzig'
+            break
+        case 6:
+            ret += 'sechszig'
+            break
+        case 7:
+            ret += 'siebzig'
+            break
+        case 8:
+            ret += 'achzig'
+            break
+        case 9:
+            ret += 'neunzig'
+            break
+        default:
+            ret += ''
+    }
+    return ret
+}
+
+for (i = 0; i < 100; i++) {
+    console.log(i + ': ' + intToStr(i))
+}
+
 setInterval(function() {
     let since = 1728752400000
     // since = 1728165600000
@@ -28,7 +112,11 @@ setInterval(function() {
             } else {
                 document.getElementById("labelTage").innerHTML = 'Tagen,'
             }
-            document.getElementById("tage").innerHTML = Math.abs(tage)
+            if (tage == 1) {
+                document.getElementById("tage").innerHTML = 'einem'
+            } else {
+                document.getElementById("tage").innerHTML = intToStr(Math.abs(tage))
+            }
         } else {
             document.getElementById("tage").innerHTML = ''
             document.getElementById("labelTage").innerHTML = ''
@@ -40,7 +128,7 @@ setInterval(function() {
             } else {
                 document.getElementById("labelStunden").innerHTML = 'Stunden,'
             }
-            document.getElementById("stunden").innerHTML = stunden
+            document.getElementById("stunden").innerHTML = intToStr(stunden)
         } else {
             document.getElementById("stunden").innerHTML = ''
             document.getElementById("labelStunden").innerHTML = ''
@@ -52,7 +140,7 @@ setInterval(function() {
             } else {
                 document.getElementById("labelMinuten").innerHTML = 'Minuten und'
             }
-            document.getElementById("minuten").innerHTML = minuten
+            document.getElementById("minuten").innerHTML = intToStr(minuten)
         } else {
             document.getElementById("minuten").innerHTML = ''
             document.getElementById("labelMinuten").innerHTML = ''
@@ -64,7 +152,7 @@ setInterval(function() {
             } else {
                 document.getElementById("labelSekunden").innerHTML = 'Sekunden.'
             }
-            document.getElementById("sekunden").innerHTML = sekunden
+            document.getElementById("sekunden").innerHTML = intToStr(sekunden)
         } else {
             document.getElementById("sekunden").innerHTML = ''
             document.getElementById("labelSekunden").innerHTML = ''
