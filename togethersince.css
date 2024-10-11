@@ -44,13 +44,16 @@ p {
         font-size: 50px;
     }
     td {
-        font-size: 40px;
+        font-size: 23px;
+        padding: 5px;
+        padding-top: 20px;
     }
     p {
         font-size: 40px;
     }
     .zahl {
         width: 50%;
+        font-size: 20px;
     }
     .comp {
         display: none;
