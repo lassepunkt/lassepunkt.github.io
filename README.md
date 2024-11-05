@@ -15,7 +15,7 @@ $v=343.2\frac m s$. Um jetzt mit einer gemessenen Zeit $t$ (in $s$) auf die Entf
 
 $s=v\cdot t$
 
-Beispielsweise ist das Gewitter bei einer gemessenen Zeit von 3 Sekunden zwischen Blitz und Donner ziemlich genau $v\cdot t=343.2\ \frac m s\ \cdot\ 3\ s=1029.6\ m$ entfernt.
+Beispielsweise ist das Gewitter bei einer gemessenen Zeit von 3 Sekunden zwischen Blitz und Donner ziemlich genau $v\cdot t=343.2\ \frac m s\ \cdot\ 3\ s=1029.6\ m$ entfernt. ([Wikipedia](https://de.wikipedia.org/wiki/Schallgeschwindigkeit))
 
 ## `freierfall.html`
 
