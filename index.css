@@ -4,11 +4,15 @@ body {
     color: #00DE00;
     font-family: Menlo, Consolas, Monaco, 'Courier New', monospace;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
 }
-p {
+p, a {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: #00DE00;
 }
 
 .cursor {
@@ -20,8 +24,40 @@ p {
     animation: blink 1s step-start infinite;
 }
 
+.typewriter {
+    overflow: hidden; /* Text wird versteckt */
+    white-space: nowrap; /* Alles in eine Zeile */
+    border-right: 10px solid #00DE00; /* blinkender Cursor */
+    width: 23ch; /* Start bei 0 */
+    
+    animation: typing 2s steps(16) forwards, 0.75s step-end infinite;
+}
+
+/* Tippen */
+@keyframes typing {
+    from { width: 23ch }
+    to { width: 39ch } /* "ch" ist die Breite eines Zeichens */
+}
+
+/* Cursor blinken */
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
 @keyframes blink {
     50% {
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 15px;
+    }
+    .cursor {
+        height: 15px;
+        width: 7.5px;
+        margin-left: 5px;
+    }
+}
+
