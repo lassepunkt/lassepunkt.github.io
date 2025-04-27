@@ -1,0 +1,27 @@
+body {
+    /* background-color: #202020; */
+    background-color: #000;
+    color: #00DE00;
+    font-family: Menlo, Consolas, Monaco, 'Courier New', monospace;
+    font-size: 20px;
+    padding: 20px;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: #00DE00;
+    margin-left: 5px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
