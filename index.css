@@ -21,7 +21,7 @@ a {
     height: 20px;
     background-color: #00DE00;
     margin-left: 5px;
-    animation: blink 1s step-start infinite;
+    /* animation: blink 1s step-start infinite; */
 }
 
 .typewriter {
